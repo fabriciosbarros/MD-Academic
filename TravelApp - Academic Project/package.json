@@ -1,0 +1,28 @@
+{
+  "name": "com.phonegap.helloworld",
+  "version": "1.0.0",
+  "displayName": "Travel App",
+  "cordova": {
+    "platforms": [
+      "browser"
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-console": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-chrome-apps-filesystem": {},
+      "cordova-plugin-file": {}
+    }
+  },
+  "dependencies": {
+    "cordova-browser": "5.0.4",
+    "cordova-plugin-chrome-apps-common": "^1.0.7",
+    "cordova-plugin-chrome-apps-filesystem": "^1.0.5",
+    "cordova-plugin-console": "^1.0.7",
+    "cordova-plugin-file": "6.0.1",
+    "cordova-plugin-geolocation": "~4.0.1",
+    "cordova-plugin-statusbar": "^1.0.1",
+    "cordova-plugin-whitelist": "^1.2.2"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "_from": "cordova-plugin-chrome-apps-filesystem@~1.0.5",
+  "_id": "cordova-plugin-chrome-apps-filesystem@1.0.5",
+  "_inBundle": false,
+  "_integrity": "sha1-YDh+srqUr9xGJh2KNGtJGoTexEw=",
+  "_location": "/cordova-plugin-chrome-apps-filesystem",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-chrome-apps-filesystem@~1.0.5",
+    "name": "cordova-plugin-chrome-apps-filesystem",
+    "escapedName": "cordova-plugin-chrome-apps-filesystem",
+    "rawSpec": "~1.0.5",
+    "saveSpec": null,
+    "fetchSpec": "~1.0.5"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-chrome-apps-filesystem/-/cordova-plugin-chrome-apps-filesystem-1.0.5.tgz",
+  "_shasum": "60387eb2ba94afdc46261d8a346b491a84dec44c",
+  "_spec": "cordova-plugin-chrome-apps-filesystem@~1.0.5",
+  "_where": "/Users/fabriciobarros/Documents/CCT/Semester 2/Mobile Development/Projects/TravelApp",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-fileSystem/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-chrome-apps-filesystem",
+    "platforms": [
+      "ios",
+      "android",
+      "bb"
+    ]
+  },
+  "deprecated": false,
+  "description": "This plugin allows apps to access a device's file system.",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-fileSystem",
+  "keywords": [
+    "chrome",
+    "file",
+    "filesystem",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "cordova-bb"
+  ],
+  "license": "BSD",
+  "name": "cordova-plugin-chrome-apps-filesystem",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-fileSystem.git"
+  },
+  "version": "1.0.5"
+}

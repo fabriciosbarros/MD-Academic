@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Author Meta -->
+	<meta name="author" content="codepixer">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Travel App</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Roboto:400,400i,500" rel="stylesheet">
+	<!--
+			CSS
+			============================================= -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/hexagons.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/weather-icons.css">
+    <link rel="stylesheet" href="css/weather-icons-wind.css">
+    <link rel="stylesheet" href="css/weather-icons-wind.min.css">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+</head>
+
+<body onload="onLoad()">
+	<!-- start header Area -->
+	<header id="header">
+			<div class="container main-menu">
+				<div class="row align-items-center justify-content-between d-flex">
+					<div id="logo">
+						<a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+					</div>
+					<nav id="nav-menu-container">
+						<ul class="nav-menu">
+							<li class="menu-active"><a href="index.html">Home</a></li>
+							<li><a href="map.html">Map</a></li>
+							<li><a href="history.html">Travel History</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+	<!-- end header Area -->
+
+	<!-- start banner Area -->
+	<section class="home-banner-area">
+		<div class="container">
+			<div class="row fullscreen d-flex align-items-center justify-content-between">
+				<div class="home-banner-content col-lg-6 col-md-6">
+					<br>
+					<center><h1>Welcome to</h1></center>
+						<center><h3 id="city"></h3></center><br>
+						<div class="col-md-4">
+							<div class="single-defination">
+								<h3 class="mb-20">WEATHER INFO</h3>
+								<h4 class="mb-30">TODAY</h4>
+							</div>
+						</div>
+						<section class="fact-area">
+							<div class="container">
+								<div class="fact-box">
+										<div class="row align-items-center">
+												<div class="col single-fact">
+													<h6 id="iconweather"></h6>
+													<h2 id="temperature"></h2>
+													<h5 id="weathersimple"></h5>
+												</div>
+											</div>
+									<div class="row align-items-center">
+										<div class="col single-fact">
+											<h6>MIN.(°C)</h6>
+											<p id="tempmin"></p>
+										</div>
+										<div class="col single-fact">
+											<h6>MAX.(°C)</h6>
+											<p id="tempmax"></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<br>
+						<div class="col-md-4">
+						<div class="single-defination">
+                            <h4 class="mb-30">FORECAST FOR THE NEXT FEW DAYS</h4> 
+							<div class="visit" id='weathertext'></div>
+						</div>
+						</div>
+			</div>
+		</div>
+		</div>
+		</div>
+	</section>
+	<!-- End banner Area -->
+
+	<!-- Start feature Area -->
+<!-- Start contact-page Area -->
+<section class="contact-page-area section-gap">
+		<div class="container">
+				<div class="col-md-4">
+						<div class="single-defination">
+								<h3 class="mb-20">CURRENCY</h3>
+								<p id="countrycurrency"></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<br>
+							<h4 class="mb-30">EXCHANGE RATE</h4>
+							<section class="fact-area">
+							<div class="container">
+							<div class="fact-box">
+							<div class="row align-items-center">
+									<div class="col single-fact">
+										<h6>US$ 1</h6>
+										<p id="rateUSDCurr"></p>
+									</div>
+									<div class="col single-fact">
+										<h6 id="actcurr">1</h6>
+										<p id="rateCurrUSD"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<br>
+
+									<section class="fact-area">
+									<div class="container">
+									<div class="fact-box">
+									<div class="row align-items-center">
+										<div class="col single-fact">
+												<h4>EXCHANGE CALCULATOR</h4>
+												<br>
+												<label for="input" id="inputLabel">USD</label>
+												<input id="input" class="form-control" type="number" min="0" oninput="convert()" placeholder="0.00">
+										</div>
+									</div>
+									<div class="row align-items-center">
+									<div class="col single-fact">
+												<button class="btn btn-info" onclick="swapCurrencies()">
+												<span class="glyphicon glyphicon-refresh">&nbsp</span>SWAP</button>
+									</div>
+								</div>
+								<div class="row align-items-center">
+										<div class="col single-fact">
+												<label for="output" id="outputLabel"></label>
+												<h5 id="output">0.00</h5>
+										</div>
+									</div>
+							</div>
+								</div>
+							</section>
+							<section class="fact-area">
+									<div class="container">
+											<div class="col-md-4">
+													<div class="single-defination">
+														<br>
+															<h3 class="mb-20">TRAVEL HISTORY</h3>
+													</div>
+													<p>To save this trip in your history, just press the button below:</p>
+												</div>
+												<div class="row align-items-center">
+														<br>
+															<div class="col single-fact">
+																
+																	<button class="btn btn-info" onclick="saveHistory()">
+																	<span class="glyphicon glyphicon-save">&nbsp</span>SAVE TRIP</button>
+															</div>
+														</div>
+													<div class="row">
+														<div class="col single-fact">
+															<p id="success"></p>
+														</div>
+													</div>
+										
+										</div>
+									</div>
+								</section>
+							</section>
+</section>
+<br>
+<br>
+<br>
+<div class="container">
+	<div class="footer-bottom row align-items-center">
+		<p class="footer-text m-0 col-lg-6 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+</div>
+</div>
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="js/tilt.jquery.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="js/superfish.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/my-app.js"></script>
+
+
+</body>
+
+</html>

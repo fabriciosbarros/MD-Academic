@@ -1,0 +1,17 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Travel App",
+  "short_name": "Travel App",
+  "version": "com.phonegap.helloworld",
+  "description": "A new app for travelling.",
+  "author": "Apache Cordova Team",
+  "icons": [
+    {
+      "src": "res/ic_launcher.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
+  "start_url": "index.html"
+}

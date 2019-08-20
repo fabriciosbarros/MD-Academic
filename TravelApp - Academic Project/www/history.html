@@ -1,0 +1,111 @@
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Author Meta -->
+	<meta name="author" content="codepixer">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Travel App</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Roboto:400,400i,500" rel="stylesheet">
+	<!--
+			CSS
+			============================================= -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/hexagons.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/weather-icons.css">
+    <link rel="stylesheet" href="css/weather-icons-wind.css">
+    <link rel="stylesheet" href="css/weather-icons-wind.min.css">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+</head>
+
+<body onload="onLoadHistory()">
+	<!-- start header Area -->
+	<header id="header">
+			<div class="container main-menu">
+				<div class="row align-items-center justify-content-between d-flex">
+					<div id="logo">
+						<a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+					</div>
+					<nav id="nav-menu-container">
+						<ul class="nav-menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="map.html">Map</a></li>
+							<li class="menu-active"><a href="history.html">Travel History</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+	<!-- start banner Area -->
+	<section class="banner-area">
+			<div class="container">
+				<div class="row banner-content">
+					<div class="col-lg-12 d-flex align-items-center justify-content-between">
+						<div class="left-part">
+							<h1>
+								TRAVEL HISTORY
+							</h1>
+							<p>
+								Here you'll find all the information saved for your previous trips.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End banner Area -->
+						<section class="fact-area">
+							<div class="container">
+								<div class="fact-box">
+										<div class="row align-items-center">
+												<div class="col single-fact">
+														<button class="btn btn-info" onclick="readFromFileHistory()">
+														<span class="glyphicon glyphicon-folder-open">&nbsp</span>LOAD HISTORY</button>
+												</div>
+												<div class="col single-fact">
+													<button class="btn btn-info" onclick="clearHistory()">
+													<span class="glyphicon glyphicon-floppy-remove">&nbsp</span>CLEAR HISTORY</button>
+											</div>
+											</div>
+											<div class="row">
+												<div class="col single-fact">
+														<h5 align="left">YOUR LAST TRIPS</h4>
+													<p align="left" id="historytext">To see any saved trips, just press the "Load History" button. If you want to delete the history, just press the "Clear History" button.</p>
+												</div>
+											</div>
+								</div>
+								</div>
+							</section>
+		<!-- End banner Area -->
+	<!-- end header Area -->
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="js/tilt.jquery.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="js/superfish.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
